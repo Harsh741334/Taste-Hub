@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.home-link {
+    text-decoration: none;
+    color: inherit; /* Keeps the same color as the header text */
+}
+
+.home-link:hover, .home-link:active, .home-link:visited {
+    color: inherit; /* Ensures the color does not change on hover, click, or visit */
+}
+
+/* Header */
+header {
+    background-color: #ff6600;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+}
+
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header-right ul li {
+    display: inline;
+}
+
+.header-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a {
+    background-color: #ff6600;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.signup a:hover {
+    background-color: #ddd;
+    color:blue;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Menu Title with Background */
+.menu-banner {
+    width: 100vw;
+    height: 60vh;
+    background: url('menuimage.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: blur(3px); */
+}
+
+.menu-title {
+    font-size: 4rem;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+/* Food Menu */
+.menu-category {
+    margin: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Scrollable Image List */
+.scroll-container {
+    display: flex;
+    align-items: center;
+}
+
+.food-list {
+    display: flex;
+    overflow-x: hidden;
+    width: 80%;
+    gap: 20px;
+    padding: 10px;
+}
+
+.food-item {
+    display: inline-block;
+    text-align: center;
+}
+
+.food-item img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+    /* background-color: #ff6600; */
+     background-color: white;
+    border: none;
+    /* border: 1px solid black; */
+    color: #e9670f;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* .scroll-btn:hover {
+    background-color: #cc5500;
+} */
+
+/* Align Category Headers to the Left */
+.left-align {
+    text-align: left;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #ff6600; /* Orange underline for section headers */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff6600; /* Changes color on hover */
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 8px 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newsletter button:hover {
+    background-color: #cc5500;
+}
+
+
+
+   
