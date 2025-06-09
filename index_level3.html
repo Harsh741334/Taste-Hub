@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Hub</title>
+    <link rel="stylesheet" href="style_level3.css">
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <h1><a href="index_level3.html" class="home-link">Taste Hub</a></h1>
+    </div>
+    <nav class="header-right">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#partner">Partner with Us</a></li>
+            <li class="signup"><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Menu Title with Background -->
+<section class="menu-banner">
+    <h1 class="menu-title">TASTE HUB</h1>
+</section>
+
+<!-- Menu Categories -->
+<section id="menu">
+
+    <!-- Fast Food Table -->
+    <div class="menu-category">
+        <h2 class="left-align">Fast Food</h2>
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollLeft('fast-food-list')">&#10094;</button>
+            <div class="food-list" id="fast-food-list">
+                <div class="food-item"><img src="BURGER IMAGE.jpg" alt="Burger"><p>Burger @199</p></div>
+                <div class="food-item"><img src="PASTA IMAGE.jpg" alt="Fries"><p>Pasta @149</p></div>
+                <div class="food-item"><img src="PIZZA IMAGE.jpg" alt="Pizza"><p>Pizza @249</p></div>
+                <div class="food-item"><img src="manchurian.jpg" alt="Hot Dog"><p>Veg Manchurian @249</p></div>
+                <div class="food-item"><img src="hcp.jpg" alt="Sandwich"><p>Honey Chilli Potato @149</p></div>
+                <div class="food-item"><img src="chaumin.jpg" alt="Wrap"><p>Chow mein @199</p></div>
+                <div class="food-item"><img src="BURGER IMAGE.jpg" alt="Burger"><p>Burger @199</p></div>
+                <div class="food-item"><img src="PASTA IMAGE.jpg" alt="Fries"><p>Pasta @149</p></div>
+                <div class="food-item"><img src="PIZZA IMAGE.jpg" alt="Pizza"><p>Pizza @249</p></div>
+                <div class="food-item"><img src="manchurian.jpg" alt="Hot Dog"><p>Veg Manchurian @249</p></div>
+                <div class="food-item"><img src="hcp.jpg" alt="Sandwich"><p>Honey Chilli Potato @149</p></div>
+                <div class="food-item"><img src="chaumin.jpg" alt="Wrap"><p>Chow mein @199</p></div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollRight('fast-food-list')">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Desserts Table -->
+    <div class="menu-category">
+        <h2 class="left-align">Desserts</h2>
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollLeft('dessert-list')">&#10094;</button>
+            <div class="food-list" id="dessert-list">
+                <div class="food-item"><img src="cake.jpg" alt="Cake"><p>Chocolate Cake</p></div>
+                <div class="food-item"><img src="icecream.jpg" alt="Ice Cream"><p>Vanilla Ice Cream</p></div>
+                <div class="food-item"><img src="donut.jpg" alt="Donut"><p>Glazed Donut</p></div>
+                <div class="food-item"><img src="brownie.jpg" alt="Brownie"><p>Chocolate Brownie</p></div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollRight('dessert-list')">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Beverages Table -->
+    <div class="menu-category">
+        <h2 class="left-align">Beverages</h2>
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollLeft('beverages-list')">&#10094;</button>
+            <div class="food-list" id="beverages-list">
+                <div class="food-item"><img src="coffee.jpg" alt="Coffee"><p>Espresso</p></div>
+                <div class="food-item"><img src="tea.jpg" alt="Tea"><p>Green Tea</p></div>
+                <div class="food-item"><img src="juice.jpg" alt="Juice"><p>Orange Juice</p></div>
+                <div class="food-item"><img src="smoothie.jpg" alt="Smoothie"><p>Berry Smoothie</p></div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollRight('beverages-list')">&#10095;</button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2025 Taste Hub</p>
+</footer>
+
+<script>
+function scrollLeft(id) {
+    document.getElementById(id).scrollBy({ left: -200, behavior: 'smooth' });
+}
+
+function scrollRight(id) {
+    document.getElementById(id).scrollBy({ left: 200, behavior: 'smooth' });
+}
+</script>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        
+        <!-- Quick Links Section -->
+        <div class="footer-section footer-links">
+            <h3>Quick Links</h3>
+            <a href="#about">About</a>
+            <a href="#partner">Partner with Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#signup">Sign Up</a>
+        </div>
+        
+        <!-- Social Media Section -->
+        <div class="footer-section social-icons">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        
+        <!-- Newsletter Signup Section -->
+        <div class="footer-section newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </div>
+    </div>
+    
+    <!-- Copyright and Terms -->
+    <p>&copy; 2025 Taste Hub. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
